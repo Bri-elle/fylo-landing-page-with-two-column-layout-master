@@ -1,0 +1,46 @@
+@import url(variables.css);
+
+button {
+	outline: none;
+	border: none;
+	box-shadow: none;
+	background-color: var(--bright-blue);
+	padding: 12px;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+input {
+	height: 40px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	padding: 18px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+.hero-section-form {
+	row-gap: 12px;
+}
+
+.hero-section-form input {
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid var(--black);
+	padding: 18px;
+}
+
+/* CTA */
+.CTA-section button,
+.CTA-section input {
+	width: 100%;
+}
+
+.CTA-section form {
+	row-gap: 8px;
+}

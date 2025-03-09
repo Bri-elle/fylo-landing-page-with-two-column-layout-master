@@ -1,0 +1,21 @@
+:root {
+	/* Primary */
+
+	--dark-blue: hsl(243, 87%, 12%);
+	--desaturated-blue: hsl(238, 22%, 44%);
+
+	/* Accent */
+	--bright-blue: hsl(224, 93%, 58%);
+	--cyan: hsl(170, 45%, 43%);
+
+	/* Neutral */
+	--grayish-blue: hsl(240, 75%, 98%);
+	--Light-gray: hsl(0, 0%, 75%);
+	--light-blue: #f9f8ff;
+	--black: #242424;
+
+	--large-font: 1.4rem;
+	--medium-font: 1.1rem;
+	--body-font: 14px;
+	--nav-link-font: 12px;
+}
