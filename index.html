@@ -48,9 +48,14 @@
 					Access them wherever you need, share and collaborate with
 					friends, family, and co-workers.
 				</p>
-				<form class="hero-section-form" action="" method="post">
-					<input type="text" placeholder="Enter your email ..." />
-					<button class="cta-button">Get Started</button>
+				<form class="hero-section-form" id="form1" action="#">
+					<input
+					 id="email1"  placeholder="Enter your email ..."  /> 
+					<p class="error-message"> </p>
+					<button 
+					type="submit"
+					onclick="validateEmail(email1)"
+					class="cta-button">Get Started</button>
 				</form>
 			</div>
 
@@ -130,9 +135,14 @@
 			</div>
 
 			<div class="cta-rhs">
-        <form action="" method="post">
-				<input type="text" placeholder="email@example.com" />
-				<button class="cta-button">Get Started For Free</button>
+        <form >
+				<input id="email2"
+				 placeholder="email@example.com" />
+				 <p class="error-message"></p>
+				<button 
+				type="submit" onclick="validateEmail(email2)"
+			
+				class="cta-button">Get Started For Free</button>
 			</div>
     </form>
 		</section>
@@ -175,4 +185,29 @@
 			</div>
 		</footer>
 	</body>
+
+	<script>
+ const errorMessage1 = document.querySelector(".error-message1");
+ const emailPattern =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+function validateEmail(email){
+	event.preventDefault()
+	console.log(email.value)
+	if(!emailPattern.test(email.value)){
+		let errorMessage = email.nextElementSibling;
+		errorMessage.textContent ="Please check your email";
+	
+
+		return false; //stops page from reloading
+		
+	}
+	else
+	email.nextElementSibling.textContent =""
+	email.style.borderColor ="#242424";
+	email.value = "";
+	
+
+}
+
+	</script>
 </html>

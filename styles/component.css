@@ -23,7 +23,9 @@ form {
 	flex-direction: column;
 	row-gap: 12px;
 }
-.hero-section-form {
+.hero-section-form,
+form {
+	position: relative;
 	row-gap: 12px;
 }
 
@@ -31,7 +33,7 @@ form {
 	height: 40px;
 	border-radius: 5px;
 	outline: none;
-	border: 1px solid var(--black);
+	outline: 1px solid var(--black);
 	padding: 18px;
 }
 
@@ -49,4 +51,17 @@ form {
 	.CTA-section button {
 		width: 50%;
 	}
+}
+
+/* || Input Error message handling */
+input:focus {
+	outline: none;
+	outline: 3px solid #dc5073;
+	/* outline: none; */
+	box-shadow: 2px 4px 4px rgba(36, 36, 36,0.2);
+}
+.error-message {
+	position: absolute;
+	top: 100%;
+	color: #e06f8b;
 }

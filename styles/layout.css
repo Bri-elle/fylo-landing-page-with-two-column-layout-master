@@ -392,6 +392,20 @@ LARGE SCREENS
 	}
 }
 
+/*
+=============
+ACTIVE-STATES
+=============
+*/
+
+button:hover {
+	background-color: #6a9bff;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
 	.social-media-links {
